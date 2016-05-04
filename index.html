@@ -27,10 +27,27 @@
 	</div>
  
 	<div class="icons">
-		<img class="trailer hvr-buzz" src="images/trailer.png"><!-- <span>Trailer</span> -->
+		<img class="trailer hvr-buzz show" src="images/trailer.png"><!-- <span>Trailer</span> -->
 		<img class="story hvr-buzz" src="images/story.png">
 		<a href="gallery.html"><img class="gallery hvr-buzz" src="images/gallery.png"></a>
 	</div>
+
+	<div class="overlay">
+		
+		<div>
+
+			<div class="video-container">
+				<div class="video">
+					
+					<iframe src="https://www.youtube.com/embed/alIq_wG9FNk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			
+					
+				</div>
+			</div>
+			<button class="hide">Close</button>
+		</div>
+
+	</div> <!-- Overlay Ends. -->
 
 	</div> <!-- Wrapper Ends. -->
 
@@ -38,6 +55,24 @@
 	<small>Some text.</small>
 </footer>
  
+ 	<script>
+
+		 var open = document.querySelector('.show'),
+		 close = document.querySelector('.hide'),
+		 modal = document.querySelector('.overlay');
+
+		 modal.classList.add('accessibly-hidden');
+
+		 open.addEventListener('click', function(){
+		 	modal.classList.remove('accessibly-hidden');
+
+		 });
+
+		 close.addEventListener('click', function(){
+		 	modal.classList.add('accessibly-hidden');
+		 });
+
+	 </script>
 
 </body>
 </html>

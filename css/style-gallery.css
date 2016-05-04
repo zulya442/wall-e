@@ -18,5 +18,12 @@
 	}
 	.slide{
 		background-size: cover;
+		background-position: center;
 	}
 
+.home{
+	position: fixed;
+	z-index: 99999;
+	top:15px;
+	left:15px;
+}

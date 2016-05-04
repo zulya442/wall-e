@@ -86,11 +86,59 @@ footer {
     width: 100%;
     background: white;
 }
+/* Overlay
+------------------------------------------*/
+
+.overlay {
+    position: fixed;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 100%;
+    z-index:1000;
+    background: rgba(1,40,115,.5);
+}
+
+.overlay div{
+    margin: 5em auto;
+   
+    padding-bottom: -1em;
+    padding-top: 1px;
+    /*min-height: 500px;    */
+}
+
+.accessibly-hidden{
+    position: absolute;
+    left: -999em;
+}
+
+/*Video*/
+
+.video-container {
+    max-width:600px;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; 
+    overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+}
 
 @media (max-width: 767px) {
 
     .fullscreen-bg {
-        background: url(images/star-bg2.jpg);
+        background: url(../images/star-bg2.jpg);
             }
 
     .fullscreen-bg__video {
