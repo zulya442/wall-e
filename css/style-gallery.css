@@ -1,0 +1,21 @@
+#slide1{
+		background-image: url(../images/Wall-E_Cubecolors.jpg);
+	}
+#slide2{
+		background-image: url(../images/slide-2.jpg);
+	}
+#slide3{
+		background-image: url(../images/slide-3.jpg);
+	}
+#slide4{
+		background-image: url(../images/slide-4.jpg);
+	}
+/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
