@@ -1,3 +1,10 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
 h1{
     color: white;
     font-size: 140px;
@@ -32,7 +39,7 @@ h2{
 }
 .wall-e-logo{
     padding: 1em;
-    margin: 0 auto;
+    margin: 0 auto; 
     max-width: 100%;
     width: 718px;
     height:195px;
@@ -42,22 +49,49 @@ img{
     max-width: 88%;
 }
 .icons{
-    width:100%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 16em;
+    flex-wrap: wrap;
 }
-.trailer,
+/*.icon span{
+    position: absolute;
+    top: 50px;
+    background: rgba(255, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+*/.trailer,
 .story,
 .gallery{
-    padding: 1em;
-    width: 80px;
-    height: 80px;
+    padding: 2em;
+    margin-right: 2em;
+    width: 90px;
+    height: 90px;
+    flex-direction: row;
+}
+.trailer:hover{
+    background: url(images/trailer-text.png);
+}
+.story:hover,
+.gallery:hover{
+    
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 145px;
+    width: 100%;
+    background: white;
 }
 
-
 @media (max-width: 767px) {
+
     .fullscreen-bg {
-        background: black center center / cover no-repeat;
-    }
+        background: url(images/star-bg2.jpg);
+            }
 
     .fullscreen-bg__video {
         display: none;
