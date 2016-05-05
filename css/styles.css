@@ -94,6 +94,26 @@ footer {
     cursor: pointer;
 }
 
+/*Icon labels hover
+---------------------------------------------*/
+.icons .item{
+    position: relative;
+    overflow: hidden;
+}
+.icons .item:hover span{
+        bottom: 0;
+}
+.icons .item span{
+    position: absolute;
+    bottom: -50px;
+    background: rgba(255,165,0,.8);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: .7em 0 1.2em 0;
+    transition:all 1s ease-in-out;
+}
+
 /* Overlay
 ------------------------------------------*/
 
@@ -213,6 +233,6 @@ footer {
         height: 86px;
     }
     .fullscreen-bg {
-        background: url(../images/iphone.jpg);
+        background: url(../images/iphone.jpg) no-repeat;
             }
 }
