@@ -47,7 +47,6 @@ a{
     padding: 1em;
     margin: 0 auto; 
     max-width: 100%;
-    width: 718px;
     height:195px;
     margin-top: 5em;
 }
@@ -55,28 +54,22 @@ img{
     max-width: 88%;
     
 }
-.icons{
-    display: flex;
-    justify-content: center;
-    margin-top: 16em;
-    flex-wrap: wrap;
+
+.wall-e-logo img {
+    display:block;
+    margin:0 auto;
 }
+
 .trailer,
 .story,
 .gallery{
     padding: 2em;
-    margin-right: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
     width: 90px;
     height: 90px;
     flex-direction: row;
     cursor: pointer;
-}
-.trailer:hover{
-    background: url(images/trailer-text.png);
-}
-.story:hover,
-.gallery:hover{
-    
 }
 footer {
     position: absolute;
@@ -96,24 +89,18 @@ footer {
 
 /*Icon labels hover
 ---------------------------------------------*/
-.icons .item{
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 16em;
+    flex-wrap: wrap;
+  /*  margin: 20px 0;
     position: relative;
-    overflow: hidden;
+    width: 120px;
+    height: 70px;
+    border: 1px solid #aaa;
+    overflow: hidden;*/
 }
-.icons .item:hover span{
-        bottom: 0;
-}
-.icons .item span{
-    position: absolute;
-    bottom: -50px;
-    background: rgba(255,165,0,.8);
-    width: 100%;
-    text-align: center;
-    color: white;
-    padding: .7em 0 1.2em 0;
-    transition:all 1s ease-in-out;
-}
-
 /* Overlay
 ------------------------------------------*/
 
@@ -140,8 +127,8 @@ footer {
     left: -999em;
 }
 
-/*Video*/
-
+/*Video
+-----------------------------------------------*/
 .video-container {
     max-width:600px;
 }
@@ -164,39 +151,7 @@ footer {
 }
 /*Key frames for Page Transitions
 ----------------------------------------------*/
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
 
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
 
 /*Media Queries
 ------------------------------------------------*/
@@ -233,6 +188,13 @@ footer {
         height: 86px;
     }
     .fullscreen-bg {
-        background: url(../images/iphone.jpg) no-repeat;
+        background: url(../images/iphone.jpg) fixed;
+        background-size:cover;
             }
+}
+@media (min-width: 767px){
+
+    .wall-e-logo{
+         width: 718px;
+    }
 }
