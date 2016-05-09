@@ -19,7 +19,7 @@ p{
     color:white;
     font-size:18px;
     text-align: center;
-    font-family: arial;
+    font-family: 'Roboto', sans-serif;
 }.fullscreen-bg {
     position: fixed;
     top: 0;
@@ -47,7 +47,7 @@ p{
 }
 .text-container{
     width: 500px;
-    margin: 5em auto;
+    margin: 1em auto;
     background: rgba(47,57,91,.5);
 }
 .home{
@@ -59,4 +59,35 @@ p{
 }
 .home:hover{
     opacity: 1;
+}
+.heading{
+    min-width: 88%;
+    padding:2em;
+    margin: 1em auto;
+    display: block;
+}
+
+/*Media Queries
+------------------------------------------------*/
+@media (max-width: 767px) {
+
+    .fullscreen-bg {
+        background: url(../images/earth.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+            }
+
+    .fullscreen-bg__video {
+        display: none;
+    }
+
+      .heading{
+        height: 86px;
+    }
+
+@media (min-width: 767px){
+
+    .heading{
+         width: 718px;
+    }
 }
