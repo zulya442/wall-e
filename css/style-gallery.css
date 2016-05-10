@@ -31,3 +31,11 @@
 .home:hover{
 	opacity: 1;
 }
+#label{
+    display: block;
+    color:white;
+    font-size: 18px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 6px;
+}

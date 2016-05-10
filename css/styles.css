@@ -100,6 +100,23 @@ footer {
     margin-top: 16em;
     flex-wrap: wrap;
 }
+#label{
+    display: none;
+    color:white;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: -19px;
+    margin-right: 1em;
+    margin-left:1em;
+}
+#gallery:hover #label,
+#story:hover #label,
+#trailer:hover #label{
+    display: block;
+}
+
+
 /* Overlay
 ------------------------------------------*/
 
@@ -174,9 +191,12 @@ footer {
     .story{
         order:3;
     }
-   .close{
-    margin-left: 0;
-   }
+    .close{
+        margin-left: 0;
+    }
+    #label{
+        display:block;
+    }
 }
 @media (max-width: 400px) {
 

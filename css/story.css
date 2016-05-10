@@ -7,8 +7,9 @@ body {
 }
 h1{
     color: white;
-    font-size: 140px;
+    font-size: 110px;
     text-align: center;
+    font-family: 'Audiowide', cursive;
 }
 h2{
     color: white;
@@ -19,8 +20,9 @@ p{
     color:white;
     font-size:18px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-}.fullscreen-bg {
+    font-family: 'Play', sans-serif;
+}
+.fullscreen-bg {
     position: fixed;
     top: 0;
     right: 0;
@@ -46,7 +48,7 @@ p{
     padding: 0 5em;
 }
 .text-container{
-    width: 500px;
+    min-width: 500px;
     margin: 1em auto;
     background: rgba(47,57,91,.5);
 }
@@ -60,11 +62,13 @@ p{
 .home:hover{
     opacity: 1;
 }
-.heading{
-    min-width: 88%;
-    padding:2em;
-    margin: 1em auto;
+#label{
     display: block;
+    color:white;
+    font-size: 18px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 6px;
 }
 
 /*Media Queries
@@ -80,14 +84,16 @@ p{
     .fullscreen-bg__video {
         display: none;
     }
-
-      .heading{
-        height: 86px;
-    }
-
-@media (min-width: 767px){
-
-    .heading{
-         width: 718px;
+    h1{
+        font-size: 65px;
     }
 }
+@media (max-width: 400px) {
+    .text-container{
+        min-width:380px;
+        margin:3px;
+    }
+    .wrapper{
+        padding:0;
+    }
+
