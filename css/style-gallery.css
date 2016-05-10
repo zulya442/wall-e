@@ -1,3 +1,5 @@
+/* Slide images
+--------------------------------------------*/
 #slide1{
 		background-image: url(../images/Wall-E_Cubecolors.jpg);
 	}
@@ -12,14 +14,14 @@
 	}
 
 /* Backgrounds will cover all the section
-	* --------------------------------------- */
-	.section{
-		background-size: cover;
-	}
-	.slide{
-		background-size: cover;
-		background-position: center;
-	}
+* --------------------------------------- */
+.section{
+	background-size: cover;
+}
+.slide{
+	background-size: cover;
+	background-position: center;
+}
 
 .home{
 	position: fixed;
@@ -38,4 +40,23 @@
     font-family: 'Play', sans-serif;
     text-align: center;
     margin-top: 6px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
+/* Media Queries
+---------------------------------------*/
+/*
+@media (max-width: 400px) {
+
+	.home{
+		width: 20px;
+		height: 20px;
+		margin:5px;
+		top:5em;
+	}
+}
+@media (max-height: 400px){
+	.home{
+		display: none;
+	}
+}*/
